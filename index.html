@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio</title>
+	  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+
+<body background="bag.jpg" onload="myFunction()">
+
+
+	<div id="loading">
+		
+	</div>
+	
+<style type="text/css">
+	footer{
+          background-color: black;
+          color: white;
+          margin-bottom: 0px;
+          position: relative;
+	}
+	.Social_Network{
+		float: right;
+		font-size: 30px;
+
+
+	}
+	table{
+		top:70px;
+		padding-right: 20px;
+	}
+	body{
+		background-repeat: no-repeat;
+		background-size: cover;
+overflow-x: hidden;
+font-size: 100%;
+	}
+	.bubbles{
+		align-items: center;
+		justify-content: space-around;
+		position: absolute;
+		width: 100%;
+		display: flex;
+		margin-top: 0%;
+			}
+	.bubbles img{
+		animation: bubble 7s linear infinite;
+		overflow: hidden;
+	}    
+	@keyframes bubble{
+		0%{
+			transform: translateY(0);
+			opacity: 0;
+		}
+		
+		50%{
+			
+			opacity: 1;
+		}
+		70%{
+			opacity: 1;
+		
+		}
+		100%{
+			transform: translateY(-80vh);
+			opacity: 0;
+		}
+		
+	}
+	.bubbles img:nth-child(1){
+		animation-delay: 2s;
+	}
+	.bubbles img:nth-child(2){
+		animation-delay: 1s;
+	}
+	.bubbles img:nth-child(3){
+		animation-delay: 2.5s;
+	}
+	.bubbles img:nth-child(4){
+		animation-delay: 4s;
+	}
+	.bubbles img:nth-child(5){
+		animation-delay: 3s;
+	}
+	.bubbles img:nth-child(6){
+		animation-delay: 3.5s;
+	}
+	.bubbles img:nth-child(7){
+		animation-delay: 1s;
+	
+
+}
+
+.carousel-inner{
+	transition: 0.1s ease;
+}
+</style>
+<center>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+  
+  <li data-target="#demo" data-slide-to="3"></li>
+   <li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="permish.jpg" alt="Los Angeles" width="1100" height="400">
+      <div class="carousel-caption">
+        <h3>Parmish Verma</h3>
+        <p>Just listen!</p>
+      </div>   
+    </div>
+  
+     <div class="carousel-item">
+      <img src="jass.jpg" alt="Neha Kakkar" width="1100" height="400" meta name="viewport" content="width=device-width, initial-scale=1">
+      <div class="carousel-caption">
+        <h3>Neha Kakkar</h3>
+        <p>no Words For Voice !</p>
+      </div>   
+    </div>
+     <div class="carousel-item">
+      <img src="and.jpg" alt="and" width="1100" height="400" meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div></center>
+
+
+<center>
+
+<div class="nav_bar">
+	<a href="https://t.me/techyguruji16"><img src="img.jpg"></a>
+	
+	<a href="https://www.youtube.com/channel/UCkH3eNrHtjzQHOBgzlwXE3A"><img src="yt.jpg"></a>
+	
+</div>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+
+			<table id="myTable">
+		<tr style="color: #fff;">
+		
+		<I><th  style="width: 40%; font-size: 25px;" >Name</th></I>
+		<th  style="width: 40%;font-size: 25px;">Artist</th>
+		<th  style="width: 40%;font-size: 25px;" >Play</th>
+		<th   style="width: 40%;font-size: 20px;">Download</th>
+	</I></tr>
+	<tr style="color: #fff;">
+		<td  style="width: 40%;">Jail</td>
+		<td  style="width: 40%;">Mankirt Aulakh</td>
+		<td  style="width: 40%; padding-right: 30px;"><audio controls>
+	<source src="Jail-Mankirt-Aulakh,Fateh.mp3" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"style="color: #fff;"><a href="http://server.pendusaab.com/48k/37561/11300357/Jail-Mankirt-Aulakh,Fateh.mp3
+"style="color: #fff; padding-right: 30px;">Download</a></td>
+</tr>
+	<tr style="color: #fff;">
+	<td  style="width: 40%;">Jail 2</td>
+		<td  style="width: 40%;">Mankirt Aulakh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Jail-2-Original-Mankirat-Aulakh.mp3" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/48k/34257/18743/Jail-2-Original-Mankirat-Aulakh.mp3"style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Diamond Da Challa</td>
+		<td  style="width: 40%;">Neha Kakkar,Parmish Verma</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Diamond-Da-Challa-Original-Parmish-Verma,Neha-Kakkar.mp3" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/48k/159822/20410/Diamond-Da-Challa-Original-Parmish-Verma,Neha-Kakkar.mp3" style="color: #fff;">Download</a></td></tr>
+	
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Born To Shine[G.O.A.T.]</td>
+		<td  style="width: 40%;">Diljit Dosanjh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Born To Shine - Diljit Dosanjh (DjPunjab.Com).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://p3201.ve.vc/data/320/48617/296084/Born%20To%20Shine%20-%20Diljit%20Dosanjh%20(DjPunjab.Com).mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Clash[G.O.A.T.]</td>
+		<td  style="width: 40%;">Diljit Dosanjh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Clash-Diljit-Dosanjh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/260204/20335/Clash-Diljit-Dosanjh.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">G.O.A.T.[G.O.A.T.]</td>
+		<td  style="width: 40%;">Diljit Dosanjh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="G.O.A.T  Intro-Diljit Dosanjh (DjPunjab.Com).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://p3201.ve.vc/data/320/48617/296070/G.O.A.T%20-%20Diljit%20Dosanjh%20(DjPunjab.Com).mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Suit Punjabi</td>
+		<td  style="width: 40%;">Jass Manak</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Suit-Punjabi-Jass-Manak.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/430394/15163/Suit-Punjabi-Jass-Manak.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Viah[Age 19]</td>
+		<td  style="width: 40%;">Jass Manak</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Viah - Jass Manak.mp3" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="https://bdjsywqi6721jsd89j09783kx832xds093jcd8210cj83.pagalworld.us/bv84jd74kdlws83ls0kldu3g67/new/320/Viah%20-%20Jass%20Manak.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Love You Oye</td>
+		<td  style="width: 40%;">Prabh Gill</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Love You Oye - Prabh Gill.mp3" type="audio/mp3"></audio></td>
+<td style="width: 40%;"><a href="https://pwdown.com/14648/Love%20You%20Oye%20-%20Prabh%20Gill.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Sab Fade Jange</td>
+		<td  style="width: 40%;">Parmish Verma</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Sab Fade Jange - Parmish Verma (DjPunjab.Com).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://s320.ve.vc/data/320/44148/290012/Sab%20Fade%20Jange%20-%20Parmish%20Verma%20(DjPunjab.Com).mp3" style="color: #fff;">Download</a></td></tr><tr style="color: #fff;">
+	<td  style="width: 40%;">Thug Life</td>
+		<td  style="width: 40%;">Diljit Dosanjh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Thug-Life-Diljit-Dosanjh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/260204/16167/Thug-Life-Diljit-Dosanjh.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Light Weight</td>
+		<td  style="width: 40%;">Kulwinder Billa</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Light-Weight-Kulwinder-Billa.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/37561/15546/Light-Weight-Kulwinder-Billa.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Tommy</td>
+		<td  style="width: 40%;">Raj Ranjodh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Tommy - Raj Ranjodh (DjPunjab.Com).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://p3201.ve.vc/data/320/45658/292180/Tommy%20-%20Raj%20Ranjodh%20(DjPunjab.Com).mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">3 Peg</td>
+		<td  style="width: 40%;">Sharry Mann,Mista Baaz </td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="3-Peg-Sharry-Maan.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/128k/34297/3216576/3-Peg-Sharry-Maan.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Hostel</td>
+		<td  style="width: 40%;">Sharry Mann</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Hostel-Sharry-Mann.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/128k/34297/10948285/Hostel-Sharry-Mann.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">High End</td>
+		<td  style="width: 40%;">Diljit Dosanjh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="High-End-Diljit-Dosanjh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/33988/13478/High-End-Diljit-Dosanjh.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Brotherhood</td>
+		<td  style="width: 40%;">Mankirt Aulakh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Brotherhood-Mankirt-Aulakh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/128k/34257/15094/Brotherhood-Mankirt-Aulakh.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Paapi Munda</td>
+		<td  style="width: 40%;">Mankirt Aulakh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Paapi Munda - Mankirt Aulakh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="https://pwdown.com/113461/Paapi%20Munda%20-%20Mankirt%20Aulakh.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Badnam</td>
+		<td  style="width: 40%;">Mankirt Aulakh </td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Badnam-(The-Bad-Boy)-DJ-Flow,Mankirt-Aulakh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/34022/12501/Badnam-(The-Bad-Boy)-DJ-Flow,Mankirt-Aulakh.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Daru Badnam</td>
+		<td  style="width: 40%;">Param Singh,Kamal Kahlon, Pratik Studio</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Daru Badnaam - Param n Kamal 320Kbps.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="https://pwdown.com/14067/Daru%20Badnaam%20-%20Param%20n%20Kamal%20320Kbps.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Naah</td>
+		<td  style="width: 40%;">Hardy Sandhu</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Naah - Hardy Sandhu 190Kbps.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="https://pwdown.com/12903/Naah%20-%20Hardy%20Sandhu%20190Kbps.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Khaab</td>
+		<td  style="width: 40%;">Akhil</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Khaab-Akhil.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/34021/14013/Khaab-Akhil.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Wang Da Naap</td>
+		<td  style="width: 40%;">Ammy Virk,Sonam Bajwa</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Wang - Ammy Virk (DjPunjab.Com).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://s320.ve.vc/data/320/45420/291869/Wang%20-%20Ammy%20Virk%20(DjPunjab.Com).mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Vail</td>
+		<td  style="width: 40%;">Mankirt Aulakh,Nimrat Khaira</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Vail Ft. Nimrat Khaira - Mankirt Aulakh (DjPunjab.Com).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://s320.ve.vc/data/320/48453/295890/Vail%20Ft.%20Nimrat%20Khaira%20-%20Mankirt%20Aulakh%20(DjPunjab.Com).mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Mann Bharya</td>
+		<td  style="width: 40%;">B Praak</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Mann Bharrya - (amlijatt.in).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="https://high.loadbig.info/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhbGJ1bV9pZCI6MzAzMjgsInRpbWVvdXQiOjE2MDEzMDc3MTN9.MJXoDQZa7yp3BmqhE0rlyT6KGJVrKpNTlyTTFbqBha4/hcnmh/Mann%20Bharrya%20-%20%28amlijatt.in%29.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Bambiha Bole</td>
+		<td  style="width: 40%;">Amrit Mann,Sidhu Moose Wala</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Bambiha-Bole-Sidhu-Moose-Wala,Amrit-Maan.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/33199/19055/Bambiha-Bole-Sidhu-Moose-Wala,Amrit-Maan.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Dil Tod Ke</td>
+		<td  style="width: 40%;">B Praak</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="O Dil Tod Ke_320(PaglaSongs).mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="O Dil Tod Ke_320(PaglaSongs).mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+	<td  style="width: 40%;">Kadar</td>
+		<td  style="width: 40%;">Mankirt Aulakh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Kadar-Mankirt-Aulakh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/128k/37561/3087974/Kadar-Mankirt-Aulakh.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+<td  style="width: 40%;">Gangland</td>
+		<td  style="width: 40%;">Mankirt Aulakh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Gangland-Mankirt-Aulakh,Deep-Kahlon.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/128k/37561/10875748/Gangland-Mankirt-Aulakh,Deep-Kahlon.mp3" style="color: #fff;">Download</a></td></tr>
+<tr style="color: #fff;">
+<td  style="width: 40%;">Daru Band</td>
+		<td  style="width: 40%;">Mankirt Aulakh</td>
+		<td  style="width: 40%;"><audio controls>
+	<source src="Daaru-Band-Mankirt-Aulakh.mp3
+" type="audio/mp3">
+</audio></td>
+<td style="width: 40%;"><a href="http://server.pendusaab.com/320k/33756/14163/Daaru-Band-Mankirt-Aulakh.mp3" style="color: #fff;">Download</a></td></tr>
+	</table>
+	<div class="bubbles"  >
+		<img src="circle.png" style="width: 50px; ">
+			<img src="circle.png" style="width: 50px; ">
+				<img src="circle.png" style="width: 50px;">
+					<img src="circle.png" style="width: 50px;">
+						<img src="circle.png" style="width: 50px;">
+						  <img src="circle.png" style="width: 50px;">
+                            <img src="circle.png" style="width: 50px;">
+	</div>
+	  <center><footer>Copyright@City Coder</footer></center>
+	
+	<script >
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+		</script>
+
+
+</body>
+</html>
